@@ -115,7 +115,7 @@ void loop() {
         
     }
       delay(5);
-      
+      client.stop();
       // 假如有資料進來就進入 while 內
       while (client.available()) {
           char c = client.read();   //將收到的資料列印出來
